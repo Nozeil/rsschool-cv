@@ -1,1 +1,1 @@
-1.[Markdown & Git](https://Nozeil.github.io/rsschool-cv/cv)
+2.[Markdown & Git](https://Nozeil.github.io/rsschool-cv/)
