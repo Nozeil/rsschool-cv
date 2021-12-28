@@ -1,1 +1,1 @@
-1.[Markdown & Git](https://Nozeil.github.io/rsschool-cv/cv)
+2.[HTML, CSS & Git Basics](https://Nozeil.github.io/rsschool-cv/)

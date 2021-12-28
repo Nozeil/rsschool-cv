@@ -1,4 +1,4 @@
-# Arthur Voloshin
+# Artur Voloshin
 
 ## Contacts
 
@@ -8,15 +8,15 @@
 
 ## About me
 
-I'm a beginner frontend developer. 
+I'm a beginner front-end developer. 
 The main goal at this stage is to obtain the necessary theoretical knowledge and practical skills for further employment. 
 I consider my strengths as the ability to solve assigned tasks, responsibility, persistence.
-I strive to obtain new necessary knowledge and skills in frontend development.
+I strive to obtain new necessary knowledge and skills in front-end development.
 
 ## Skills 
 
-* HTML
-* CSS
+* HTML5
+* CSS3
 * JS
 * Git/GitHub
 * VSCode
