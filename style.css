@@ -1,0 +1,673 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: center;
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #F2F2F2;
+	background-color: #35373b;
+}
+
+.header {
+	width: auto;
+	background-color: #232426;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.nav-item {
+	letter-spacing: 2px;
+}
+
+.nav-link {
+	position: relative;
+	padding: 0 15px;
+	text-decoration:none;
+	line-height: 30px;
+	color:#F2F2F2;
+}
+
+.nav-link::after {
+	position: absolute;
+	content: "";
+	left: 15px;
+	bottom: -3px;
+	width: calc(100% - 30px);
+	height: 2px;
+	background-color: #666D73;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+	opacity: 1;
+	transform: translateY(0.2em);
+}
+
+
+.main {
+	margin-bottom: auto;
+	background-color: #35373b;
+}
+
+.section {
+	display: flex;
+	margin: 40px 0;
+}
+
+.section-profile-contacts {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-radius: 5px ;
+	background-color: #232426 ;
+}
+
+.section-profile {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.profile-photo {
+	width: 200px;
+	height: 200px;
+	margin: 10px 45px;
+	border: 3px solid #F2F2F2;
+	border-radius: 100px;
+	box-shadow: 0 0 40px #000000;
+} 
+
+.section-title-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0;
+	padding: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+.profile-profession {
+	display: flex;
+	font-size: 0.5em;
+	font-weight: 300;
+}
+
+.section-contacts {
+	display: flex;
+	align-items: center;
+	margin-right: 40px;
+	line-height: 2em;
+	border-left: 2.5em solid #F2F2F2 ;
+}
+
+.section-item-github {
+	position: relative;
+}
+
+.section-item-github::before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: -81px;
+	width: 32px;
+	height: 32px;
+	background: url("assets/gitHub.png");
+}
+
+.section-item-gmail {
+	position: relative;
+}
+
+.section-item-gmail::before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: -81px;
+	width: 32px;
+	height: 32px;
+	background: url("assets/gmail.png");
+}
+
+.section-item-phone {
+	position: relative;
+}
+
+.section-item-phone::before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: -81px;
+	width: 32px;
+	height: 32px;	
+	background: url("assets/phone.png");
+}
+
+.section-item-discord {
+	position: relative;
+}
+
+.section-item-discord::before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: -81px;
+	width: 32px;
+	height: 32px;
+	background: url("assets/discord-logo.png");
+}
+
+.link {
+	text-decoration: none;
+	color:#F2F2F2;
+}
+
+.link:hover {
+	color: #666D73;
+	transition: 0.5s;
+}
+
+.section-title-projects {
+	display: flex;
+	justify-content: end;
+	flex-basis: 20%;
+	margin: 0;
+	font-size: 40px;
+	letter-spacing: 10px;
+	writing-mode: vertical-lr;
+	text-align: center;
+	transform: rotate(180deg);
+}
+
+.section-marker {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-basis: 20%;
+	align-items: end;
+	border-right: 2px solid #F2F2F2 ;
+}
+
+.section-marker::before {
+	position: absolute;
+	content: "";
+	right: -10px;	
+	width: 15px;
+	height: 15px;
+	border: 2px solid #F2F2F2;
+	border-radius: 10px;
+	background-color: #232426;
+}
+
+.section-projects-list {
+	flex-basis: 60%;
+	align-self: center;
+	padding-left: 40px;
+}
+
+.section-summary-education-skills {	
+	padding: 50px;
+	background-color: #232426;
+	border-radius: 5px;
+	flex-wrap: wrap;
+}
+
+.section-summary {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap ;
+	flex: 0 0 34%;
+	padding-right: 25px;
+	text-align: justify;
+}
+
+
+.section-title-summary {
+	position: relative;
+	padding: 0 0 20px;
+	margin: 0;
+}
+
+.section-title-summary::before {
+	position: absolute;
+	content: "";
+	top: 40px;
+	width: 65px;
+	height: 2px;
+	background-color: #F2F2F2;
+}
+
+.section-education {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 33%;
+	flex-wrap: wrap ;
+	padding: 0 25px;
+	border-left: 1px solid #666D73;
+}
+
+.section-title {
+	letter-spacing: 5px;
+}
+
+.section-title-education {
+	position: relative;
+	padding: 0 0 20px;
+	margin: 0;
+}
+
+.section-title-education::before {
+	position: absolute;
+	content: "";
+	top: 40px;
+	width: 65px;
+	height: 2px;
+	background-color: #F2F2F2;
+}
+
+.span-years {
+	padding: 0 5px;
+	background-color: #35373b;
+}
+
+.courses {
+	margin: 0;
+}
+
+.courses-certificates {
+	margin: 0;
+}
+
+.section-item {
+	position: relative;
+}
+
+.section-item::before {
+	position: absolute;
+	content: "";
+	top: 12px;
+	left: -40px;
+	width: 15px;
+	height: 5px;
+	background-color: #F2F2F2;
+}
+
+
+.section-skills {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 33%;
+	flex-wrap: wrap ;
+	padding-left: 25px;
+	border-left: 1px solid #666D73 ;
+}
+
+.section-title-skills {
+	position: relative;
+	padding: 0 0 20px;
+	margin: 0;
+}
+
+.section-title-skills::before {
+	position: absolute;
+	content: "";
+	top: 40px;
+	width: 65px;
+	height: 2px;
+	background-color: #F2F2F2;
+}
+
+.section-title-code {
+	margin: 0;
+	padding: 0 50px;
+}
+
+.section-task {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.section-code {
+	flex-direction: column;
+	margin: 0;
+}
+
+.section-code-paragraph {
+	flex-basis: 50% ;
+	text-align: justify;
+}
+
+.section-link {
+	padding: 0;
+	margin: 0;
+}
+
+.section-languages {
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+	padding: 50px;
+	border-radius: 5px;
+	background-color: #232426;
+}
+
+.section-languages-paragrapgh {
+	margin: 20px 5px;
+	padding-left: 20px;
+	border-left: 1px solid #F2F2F2;
+}
+
+.section-title-languages {
+	margin: 0;
+	align-self: center;
+	letter-spacing: 2px ;
+}
+
+.footer {
+	width: auto;
+	background-color: #232426;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.rss-logo {
+	width: 150px;
+	height: 60px;
+	background-image: url("assets/rs_school_js_.svg");
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) { 
+	.body {
+		font-size: 15px;
+	}
+
+	.section-profile {
+		justify-content: center;
+	}
+
+	.profile-photo {
+		height: 190px;
+		width: 190px;
+	}
+
+	.section-title-profile {
+		align-items: center;
+		padding: 10px;
+		font-size: 45px;
+	}
+
+	.section-title-projects {
+		font-size: 35px;
+	}
+	.section-summary-education-skills {
+		flex-direction: column;
+	}
+
+	.section-summary {
+		padding-left: 25px;
+		border-left: 1px solid #666D73;
+	}
+
+	.section-education {
+		padding-bottom: 20px ;
+	}
+
+	.section-task {
+		display: flex;
+		flex-direction: column;
+		padding: 0 20px;
+	}
+
+	.section-item-github::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: -76px;
+		width: 32px;
+		height: 32px;
+		background: url("assets/gitHub.png");
+	}
+	
+	.section-item-gmail::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: -76px;
+		width: 32px;
+		height: 32px;
+		background: url("assets/gmail.png");
+	}
+	
+	.section-item-phone::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: -76px;
+		width: 32px;
+		height: 32px;	
+		background: url("assets/phone.png");
+	}
+	
+	.section-item-discord::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: -76px;
+		width: 32px;
+		height: 32px;
+		background: url("assets/discord-logo.png");
+	}
+	
+	.section-title-summary::before {
+		position: absolute;
+		content: "";
+		top: 35px;
+		width: 65px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-title-education::before {
+		position: absolute;
+		content: "";
+		top: 35px;
+		width: 65px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-title-skills::before {
+		position: absolute;
+		content: "";
+		top: 35px;
+		width: 65px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-item::before {
+		position: absolute;
+		content: "";
+		top: 7.5px;
+		left: -40px;
+		width: 15px;
+		height: 4px;
+		background-color: #F2F2F2;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.body {
+		font-size: 10px;
+	}
+
+	.section-title-profile {
+		display: flex;
+		padding: 10px;
+		font-size: 40px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-profile-contacts {
+		flex-direction: column;
+	}
+
+	.section-contacts {
+		flex-direction: column;
+		border: none;
+	}
+
+	.section-contacts-list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 0;
+	}
+
+	.section-item-github {
+		padding: 0 5px;
+		border-left: 20px solid #F2F2F2;
+	}
+
+	.section-item-gmail {
+		padding: 0 5px;
+		border-left: 20px solid #F2F2F2;
+	}
+
+	.section-item-phone {
+		padding: 0 5px;
+		border-left: 20px solid #F2F2F2;
+	}
+
+	.section-item-discord {
+		padding: 0 5px;
+		border-left: 20px solid #F2F2F2;
+	}
+
+	.section-title-projects {
+		font-size: 30px;
+	}
+
+	.section-title-summary::before {
+		position: absolute;
+		content: "";
+		top: 35px;
+		width: 65px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-title-education::before {
+		position: absolute;
+		content: "";
+		top: 30px;
+		width: 65px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-title-skills::before {
+		position: absolute;
+		content: "";
+		top: 30px;
+		width: 65px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-item::before {
+		position: absolute;
+		content: "";
+		top: 5px;
+		left: -40px;
+		width: 15px;
+		height: 2px;
+		background-color: #F2F2F2;
+	}
+
+	.section-item-github::before {
+		position: absolute;
+		content: "";
+		top: 2px;
+		left: -18px;
+		width: 16px;
+		height: 16px;
+		background: url("assets/16x16icons/gitHub.png");
+	}
+	
+	.section-item-gmail::before {
+		position: absolute;
+		content: "";
+		top: 2px;
+		left: -18px;
+		width: 16px;
+		height: 16px;
+		background: url("assets/16x16icons/gmail.png");
+	}
+	
+	.section-item-phone::before {
+		position: absolute;
+		content: "";
+		top: 2px;
+		left: -18px;
+		width: 16px;
+		height: 16px;	
+		background: url("assets/16x16icons/phone.png");
+	}
+	
+	.section-item-discord::before {
+		position: absolute;
+		content: "";
+		top: 2px;
+		left: -18px;
+		width: 16px;
+		height: 16px;
+		background: url("assets/16x16icons/discord-logo.png");
+	}
+
+}
+
+
+
+
