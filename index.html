@@ -53,6 +53,163 @@
 			</nav>
 		</div>
 	</header>
-	
+	<main class="main">
+		<div class="container main-container">
+			<section class="section section-profile-contacts">
+				<div class="section-profile">
+					
+						<img class="profile-photo" src="assets/profilePhoto_.jpg" alt="profile-photo">
+					
+					<h1 class="section-title-profile">
+						<span>Artur</span>
+						<span>Voloshin</span>
+						<span class="profile-profession">Front-end</span>
+						<span class="profile-profession">Developer
+						</span>
+					</h1>
+				</div>
+				<div class="section-contacts">
+					<ul class="list section-contacts-list">
+						<li class="section-item-github">
+							<a class="link contacts-link" href="https://github.com/Nozeil" title="github">
+								Nozeil
+							</a>
+						</li>
+						<li class="section-item-gmail">
+							<a class="link contacts-link" href="mailto:nozeilwrk@gmail.com" title="email">
+								nozeilwrk@gmail.com
+							</a>
+						</li>
+						<li class="section-item-phone">
+							+375298849867
+						</li>
+						<li class="section-item-discord">
+							unknwn#4500
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section section-projects" id="projects">
+					<h2 class="section-title-projects">
+						PROJECTS
+					</h2>
+				<div class="section-marker">
+				</div>
+				<div class="section-projects-list">
+					<a class="link cv-link" href="https://nozeil.github.io/rsschool-cv/">
+						This CV
+					</a>
+				</div>
+			</section>
+			<div class="section section-summary-education-skills" id="summary-education-skills">
+				<section class="section-summary">
+					<h2 class="section-title section-title-summary">
+						Summary
+					</h2>
+					<p>
+						I'm a beginner front-end developer.
+						The main goal at this stage is to obtain the necessary theoretical knowledge and practical skills for
+						further
+						employment.
+						I consider my strengths as the ability to solve assigned tasks, responsibility, persistence.
+						I strive to obtain new necessary knowledge and skills in front-end development.
+					</p>
+				</section>
+				<section class="section-education">
+					<h2 class="section-title section-title-education">
+						Education
+					</h2>
+					<p>
+						Belarusian National Technical University
+						<span class="span-years">
+							2014-2019
+						</span>
+					</p>
+					<p class="courses">
+						Sololearn courses
+					</p>
+					<ul class="list section-list courses-certificates">
+						<li class="section-item">
+							<a class="link section-link" href="https://www.sololearn.com/Certificate/1014-13545260/jpg/">
+								HTML5-cerificate
+							</a>
+						</li>
+						<li class="section-item">
+							<a class="link section-link" href="https://www.sololearn.com/Certificate/1023-13545260/jpg/">
+								CSS3-cerificate
+							</a>
+						</li>
+						<li class="section-item">
+							<a class="link section-link"
+								href="https://www.sololearn.com/certificates/course/en/13545260/1024/landscape/png">
+								JavaScript-cerificate
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="section-skills">
+					<h2 class="section-title section-title-skills">
+						Skills
+					</h2>
+					<ul class="list section-list">
+						<li class="section-item">
+							HTML5
+						</li>
+						<li class="section-item">
+							CSS3
+						</li>
+						<li class="section-item">
+							JavaScript
+						</li>
+						<li class="section-item">
+							Git
+						</li>
+						<li class="section-item">
+							GitHub
+						</li>
+						<li class="section-item">
+							VSCode
+						</li>
+					</ul>
+				</section>
+			</div>
+			<section class="section section-code" id="code">
+				<h2 class="section-title section-title-code">
+					Code
+				</h2>
+				<div class="section section-task">
+					<p class="section-code-paragraph">
+						<a class="link section-link" href="https://www.codewars.com/kata/57b06f90e298a7b53d000a86">
+							Task:
+						</a> There is a queue for the self-checkout tills at the supermarket. Your task is write a function to
+						calculate the total time required for all the customers to check out!
+					</p>
+					<pre class="pre">
+<code class="code">Solution:
+function queueTime(customers, n) {
+  let tills = new Array(n).fill(0);
+  customers.forEach(time => {
+    let minQueue = tills.indexOf(Math.min(...tills));
+   tills[minQueue] += time;
+  });
+}</code></pre>
+				</div>
+			</section>
+			<section class="section section-languages" id="languages">
+				<h2 class="section-title-languages">
+					Languages
+				</h2>
+				<p class="section-languages-paragrapgh">
+					Russian — native speaker
+				</p>
+				<p class="section-languages-paragrapgh">
+					English — B2
+					<a class="link section-link" href="https://www.efset.org/cert/i8yTzB">
+						Efset certificate
+					</a>
+				</p>
+			</section>
+		</div>
+	</main>
 </body>
 </html>
