@@ -2,7 +2,7 @@
 
 ## Contacts
 
-* Phone: +375298849867
+
 * E-mail: nozeilwrk@gmail.com
 * Discord: Artur(@Nozeil)
 
