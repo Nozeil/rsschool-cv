@@ -43,6 +43,10 @@ function queueTime(customers, n) {
 ## Experiance
  
 [Markdown & Git](https://Nozeil.github.io/rsschool-cv/cv)
+[Portfolio](https://nozeil.github.io/stage-0/portfolio)
+[Custom video player](https://nozeil.github.io/stage-0/portfolio#video)
+[Movie app](https://nozeil.github.io/stage-0/movie-app)
+[Memory game](https://nozeil.github.io/stage-0/memory-game)
 
 ## Education
 
