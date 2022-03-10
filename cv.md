@@ -2,7 +2,7 @@
 
 ## Contacts
 
-
+* Telegram: @nozei1
 * E-mail: nozeilwrk@gmail.com
 * Discord: Artur(@Nozeil)
 
