@@ -4,7 +4,7 @@
 
 * Phone: +375298849867
 * E-mail: nozeilwrk@gmail.com
-* Discord: Arthur(@Nozeil)
+* Discord: Artur(@Nozeil)
 
 ## About me
 
