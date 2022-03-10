@@ -54,5 +54,5 @@ SoloLearn ([HTML](https://www.sololearn.com/Certificate/1014-13545260/jpg/), [CS
 
 ## Languages
 * Russian — native speaker
-* English — B2 ([Efset certificate](https://www.efset.org/cert/i8yTzB)) 
+* English — B1 ([Efset certificate](https://www.efset.org/cert/i8yTzB)) 
 
