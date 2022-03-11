@@ -142,7 +142,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;
-	background: url("assets/gitHub.png");
+	background-image: url("./assets/svg/github.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .section-item-gmail {
@@ -156,7 +158,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;
-	background: url("assets/gmail.png");
+	background-image: url("./assets/svg/gmail.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .section-item-phone {
@@ -170,7 +174,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;	
-	background: url("assets/phone.png");
+	background-image: url("./assets/svg/telegram.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .section-item-discord {
@@ -184,7 +190,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;
-	background: url("assets/discord-logo.png");
+	background-image: url("./assets/svg/discord.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .link {
