@@ -331,7 +331,6 @@ html {
 	background-color: #F2F2F2;
 }
 
-
 .section-skills {
 	display: flex;
 	flex-direction: column;
@@ -441,6 +440,17 @@ html {
 		font-size: 45px;
 	}
 
+	.section-contacts-list {
+		padding-left: 20px;
+	}
+
+	.section-item-github::before,.section-item-gmail::before,.section-item-phone::before,.section-item-discord::before {
+		top: 2px;
+		left: -54px;
+		width: 28px;
+		height: 28px;
+	}
+
 	.section-title-projects {
 		font-size: 35px;
 	}
@@ -461,46 +471,6 @@ html {
 		display: flex;
 		flex-direction: column;
 		padding: 0 20px;
-	}
-
-	.section-item-github::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;
-		background: url("assets/gitHub.png");
-	}
-	
-	.section-item-gmail::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;
-		background: url("assets/gmail.png");
-	}
-	
-	.section-item-phone::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;	
-		background: url("assets/phone.png");
-	}
-	
-	.section-item-discord::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;
-		background: url("assets/discord-logo.png");
 	}
 	
 	.section-title-summary::before {
@@ -544,53 +514,12 @@ html {
 
 @media (max-width: 500px) {
 
-	.body {
-		font-size: 10px;
-	}
-
 	.section-title-profile {
 		display: flex;
 		padding: 10px;
 		font-size: 40px;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.section-profile-contacts {
-		flex-direction: column;
-	}
-
-	.section-contacts {
-		flex-direction: column;
-		border: none;
-	}
-
-	.section-contacts-list {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		width: 100%;
-		padding: 0;
-	}
-
-	.section-item-github {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
-	.section-item-gmail {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
-	.section-item-phone {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
-	.section-item-discord {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
 	}
 
 	.section-title-projects {
@@ -634,48 +563,4 @@ html {
 		background-color: #F2F2F2;
 	}
 
-	.section-item-github::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;
-		background: url("assets/16x16icons/gitHub.png");
-	}
-	
-	.section-item-gmail::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;
-		background: url("assets/16x16icons/gmail.png");
-	}
-	
-	.section-item-phone::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;	
-		background: url("assets/16x16icons/phone.png");
-	}
-	
-	.section-item-discord::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;
-		background: url("assets/16x16icons/discord-logo.png");
-	}
-
 }
-
-
-
-
