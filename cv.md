@@ -52,7 +52,9 @@ function queueTime(customers, n) {
 * University:
 Belarusian National Technical University, power engineer. Graduation year: 2019
 * Courses:  
-SoloLearn ([HTML](https://www.sololearn.com/Certificate/1014-13545260/jpg/), [CSS](https://www.sololearn.com/Certificate/1023-13545260/jpg/), [JS](https://www.sololearn.com/certificates/course/en/13545260/1024/landscape/png))
+  * SoloLearn ([HTML](https://www.sololearn.com/Certificate/1014-13545260/jpg/), [CSS](https://www.sololearn.com/Certificate/1023-13545260/jpg/), [JS](https://www.sololearn.com/certificates/course/en/13545260/1024/landscape/png))
+  * [RSSchool JS/FE PRE-SCHOOL 2022 (JAVASCRIPT)](https://app.rs.school/certificate/48tfryzm)
+								
 
 
 ## Languages
