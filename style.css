@@ -26,6 +26,13 @@ html {
 	background-color: #232426;
 }
 
+.header-container {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	min-height: 90px;
+}
+
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -35,9 +42,13 @@ html {
 	list-style-type: none;
 }
 
+.nav {
+	display: flex;
+	align-items: center;
+}
+
 .nav-list {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -61,7 +72,7 @@ html {
 	bottom: -3px;
 	width: calc(100% - 30px);
 	height: 2px;
-	background-color: #666D73;
+	background-color: #FF8A17;
 	opacity: 0;
 	transition: opacity 300ms, transform 300ms;
 }
@@ -72,6 +83,23 @@ html {
 	transform: translateY(0.2em);
 }
 
+.header-container-burger {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: none;
+	width: 50px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.line {
+	width: 50px;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #F2F2F2;
+	transition: .4s ease-in-out;
+}
 
 .main {
 	margin-bottom: auto;
@@ -87,7 +115,7 @@ html {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	border-radius: 5px ;
-	background-color: #232426 ;
+	background-color: rgb(35, 36, 38) ;
 }
 
 .section-profile {
@@ -103,7 +131,7 @@ html {
 	margin: 10px 45px;
 	border: 3px solid #F2F2F2;
 	border-radius: 100px;
-	box-shadow: 0 0 40px #000000;
+	box-shadow: 0 0 5px 0 #000000;
 } 
 
 .section-title-profile {
@@ -142,7 +170,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;
-	background: url("assets/gitHub.png");
+	background-image: url("./assets/svg/github.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .section-item-gmail {
@@ -156,7 +186,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;
-	background: url("assets/gmail.png");
+	background-image: url("./assets/svg/gmail.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .section-item-phone {
@@ -170,7 +202,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;	
-	background: url("assets/phone.png");
+	background-image: url("./assets/svg/telegram.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .section-item-discord {
@@ -184,7 +218,9 @@ html {
 	left: -81px;
 	width: 32px;
 	height: 32px;
-	background: url("assets/discord-logo.png");
+	background-image: url("./assets/svg/discord.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .link {
@@ -193,20 +229,72 @@ html {
 }
 
 .link:hover {
-	color: #666D73;
+	color: #FF8A17;
 	transition: 0.5s;
+}
+
+.section-projects {
+	justify-content: space-around;
 }
 
 .section-title-projects {
 	display: flex;
 	justify-content: end;
-	flex-basis: 20%;
+	align-items: center;
+	flex-basis: 21%;
 	margin: 0;
 	font-size: 40px;
 	letter-spacing: 10px;
 	writing-mode: vertical-lr;
 	text-align: center;
 	transform: rotate(180deg);
+}
+
+.section-projects-list {
+	display: flex;
+	justify-content: space-around;
+	flex-basis: 80%;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.project {
+	height: 300px;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.project-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background-color: rgba(35, 36, 38, 0.8);
+}
+
+.project-title {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 0 20px;
+}
+
+.portfolio {
+	background-image: url('./assets/png/portfolio.png');
+}
+
+.movie-app {
+	background-image: url('./assets/png/movie_app.png');
+}
+
+.memory-game {
+	background-image: url('./assets/png/memory_game.png');
 }
 
 .section-marker {
@@ -217,23 +305,6 @@ html {
 	flex-basis: 20%;
 	align-items: end;
 	border-right: 2px solid #F2F2F2 ;
-}
-
-.section-marker::before {
-	position: absolute;
-	content: "";
-	right: -10px;	
-	width: 15px;
-	height: 15px;
-	border: 2px solid #F2F2F2;
-	border-radius: 10px;
-	background-color: #232426;
-}
-
-.section-projects-list {
-	flex-basis: 60%;
-	align-self: center;
-	padding-left: 40px;
 }
 
 .section-summary-education-skills {	
@@ -301,12 +372,13 @@ html {
 	background-color: #35373b;
 }
 
-.courses {
-	margin: 0;
+.university, .courses {
+	margin: 10px 0;
 }
 
 .courses-certificates {
 	margin: 0;
+	padding-left: 36px;
 }
 
 .section-item {
@@ -316,13 +388,12 @@ html {
 .section-item::before {
 	position: absolute;
 	content: "";
-	top: 12px;
-	left: -40px;
+	top: 10px;
+	left: -25px;
 	width: 15px;
 	height: 5px;
 	background-color: #F2F2F2;
 }
-
 
 .section-skills {
 	display: flex;
@@ -348,6 +419,10 @@ html {
 	background-color: #F2F2F2;
 }
 
+.section-list {
+	padding-left: 25px;
+}
+
 .section-title-code {
 	margin: 0;
 	padding: 0 50px;
@@ -355,9 +430,10 @@ html {
 
 .section-task {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
-	flex-wrap: wrap;
 	margin: 0;
+	padding: 0 50px;
 }
 
 .section-code {
@@ -366,8 +442,12 @@ html {
 }
 
 .section-code-paragraph {
-	flex-basis: 50% ;
+	flex-basis: 30% ;
 	text-align: justify;
+}
+
+.code {
+	font-family: 'Lato',sans-serif;
 }
 
 .section-link {
@@ -376,15 +456,15 @@ html {
 }
 
 .section-languages {
-	justify-content:space-evenly;
-	flex-wrap: wrap;
-	padding: 50px;
-	border-radius: 5px;
-	background-color: #232426;
+	justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #232426;
 }
 
 .section-languages-paragrapgh {
-	margin: 20px 5px;
+	margin: 10px 5px 0;
 	padding-left: 20px;
 	border-left: 1px solid #F2F2F2;
 }
@@ -404,6 +484,7 @@ html {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	min-height: 90px;
 }
 
 .rss-logo {
@@ -413,11 +494,70 @@ html {
 	background-repeat: no-repeat;
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 768px) { 
 	.body {
 		font-size: 15px;
 	}
 
+	.nav {
+		position: fixed;
+		justify-content: center;
+		height: 100vh;
+		width: 100%;
+		z-index: 1;
+		font-size: 48px;
+		background-color: rgba(0, 0, 0, 0.3);
+		backdrop-filter: blur(30px);
+		transform: translateY(-100%);
+		transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+
+	.nav.active {
+		transform: translateY(0%);
+	}
+
+	.nav-link::after {
+		left: 0;
+		width: 100%;
+	}
+
+	.nav-list {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 40px;
+	}
+
+	.nav-link {
+		padding: 0;
+	}
+
+	.header-container-burger {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-container-burger.active {
+		position: fixed;
+	}
+
+	.header-container-burger.active .line:first-child {
+		transform: translateY(13px)rotate(45deg);
+		transition-delay: .1s;
+	}
+
+	.header-container-burger.active .line:nth-child(2) {
+		width: 0;
+		transition: .2s;
+	}
+
+	.header-container-burger.active .line:last-child {
+		transform: translateY(-13px)rotate(-45deg);
+		transition-delay: .1s;
+	}
+	
 	.section-profile {
 		justify-content: center;
 	}
@@ -431,6 +571,17 @@ html {
 		align-items: center;
 		padding: 10px;
 		font-size: 45px;
+	}
+
+	.section-contacts-list {
+		padding-left: 20px;
+	}
+
+	.section-item-github::before,.section-item-gmail::before,.section-item-phone::before,.section-item-discord::before {
+		top: 2px;
+		left: -54px;
+		width: 28px;
+		height: 28px;
 	}
 
 	.section-title-projects {
@@ -454,46 +605,6 @@ html {
 		flex-direction: column;
 		padding: 0 20px;
 	}
-
-	.section-item-github::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;
-		background: url("assets/gitHub.png");
-	}
-	
-	.section-item-gmail::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;
-		background: url("assets/gmail.png");
-	}
-	
-	.section-item-phone::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;	
-		background: url("assets/phone.png");
-	}
-	
-	.section-item-discord::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: -76px;
-		width: 32px;
-		height: 32px;
-		background: url("assets/discord-logo.png");
-	}
 	
 	.section-title-summary::before {
 		position: absolute;
@@ -523,21 +634,31 @@ html {
 	}
 
 	.section-item::before {
-		position: absolute;
-		content: "";
-		top: 7.5px;
-		left: -40px;
-		width: 15px;
-		height: 4px;
-		background-color: #F2F2F2;
+		top: 7px;
 	}
-
+	
+	.rss-logo {
+		width: 100px;
+    height: 40px;
+	}
+	
 }
 
 @media (max-width: 500px) {
 
-	.body {
-		font-size: 10px;
+	.nav-list {
+		gap: 20px;
+	}
+	.nav-link {
+		font-size: 40px;
+	}
+
+	.line {
+		width: 40px;
+	}
+
+	.section-title {
+		padding-bottom: 5px;
 	}
 
 	.section-title-profile {
@@ -548,51 +669,23 @@ html {
 		align-items: center;
 	}
 
-	.section-profile-contacts {
-		flex-direction: column;
-	}
-
-	.section-contacts {
-		flex-direction: column;
-		border: none;
-	}
-
-	.section-contacts-list {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		width: 100%;
-		padding: 0;
-	}
-
-	.section-item-github {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
-	.section-item-gmail {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
-	.section-item-phone {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
-	.section-item-discord {
-		padding: 0 5px;
-		border-left: 20px solid #F2F2F2;
-	}
-
 	.section-title-projects {
 		font-size: 30px;
+	}
+
+	.project {
+		height: 200px;
+	}
+
+	.project-info {
+		width: 200px;
+		height: 200px;
 	}
 
 	.section-title-summary::before {
 		position: absolute;
 		content: "";
-		top: 35px;
+		top: 30px;
 		width: 65px;
 		height: 2px;
 		background-color: #F2F2F2;
@@ -616,58 +709,18 @@ html {
 		background-color: #F2F2F2;
 	}
 
-	.section-item::before {
-		position: absolute;
-		content: "";
-		top: 5px;
-		left: -40px;
-		width: 15px;
-		height: 2px;
-		background-color: #F2F2F2;
+	.code {
+		font-size: 13px;
 	}
 
-	.section-item-github::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;
-		background: url("assets/16x16icons/gitHub.png");
+	.section-title-languages {
+		align-self: flex-start;
+		padding-left: 10px;
 	}
-	
-	.section-item-gmail::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;
-		background: url("assets/16x16icons/gmail.png");
-	}
-	
-	.section-item-phone::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;	
-		background: url("assets/16x16icons/phone.png");
-	}
-	
-	.section-item-discord::before {
-		position: absolute;
-		content: "";
-		top: 2px;
-		left: -18px;
-		width: 16px;
-		height: 16px;
-		background: url("assets/16x16icons/discord-logo.png");
+
+	.section-languages {
+		flex-direction: column;
+		padding: 30px 40px;
 	}
 
 }
-
-
-
-

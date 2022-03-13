@@ -2,9 +2,9 @@
 
 ## Contacts
 
-* Phone: +375298849867
+* Telegram: @nozei1
 * E-mail: nozeilwrk@gmail.com
-* Discord: Arthur(@Nozeil)
+* Discord: Artur(@Nozeil)
 
 ## About me
 
@@ -41,8 +41,11 @@ function queueTime(customers, n) {
 ```
 
 ## Experiance
- 
-[Markdown & Git](https://Nozeil.github.io/rsschool-cv/cv)
+
+* [Portfolio](https://nozeil.github.io/stage-0/portfolio)
+* [Custom video player](https://nozeil.github.io/stage-0/portfolio#video)
+* [Movie app](https://nozeil.github.io/stage-0/movie-app)
+* [Memory game](https://nozeil.github.io/stage-0/memory-game)
 
 ## Education
 
@@ -54,5 +57,5 @@ SoloLearn ([HTML](https://www.sololearn.com/Certificate/1014-13545260/jpg/), [CS
 
 ## Languages
 * Russian — native speaker
-* English — B2 ([Efset certificate](https://www.efset.org/cert/i8yTzB)) 
+* English — B1 ([Efset certificate](https://www.efset.org/cert/i8yTzB)) 
 
